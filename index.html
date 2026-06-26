@@ -567,7 +567,7 @@
   function checkoutCart() {
     let items = Object.keys(cart);
     if(items.length === 0) return;
-    let text = `📚 طلب جديد من مكتبة الوصال%0A`;
+    let text = `📚 طلب جديد من مكتبة خطوة زواج%0A`;
     let total = 0;
     items.forEach(id => { let b = booksData.find(x=>x.id==id); let sub = b.price * cart[id]; total += sub; text += `• ${b.title} ×${cart[id]} = ${sub.toFixed(2)} د.ب%0A`; });
     text += `%0A💰 الإجمالي: ${total.toFixed(2)} دينار بحريني%0Aأرغب بإتمام الطلب.`;
